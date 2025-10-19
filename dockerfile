@@ -1,39 +1,32 @@
-# ---------- Stage 1: Build ----------
+# Stage 1: Build with Node
 FROM node:20-alpine AS builder
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files
-COPY package*.json bun.lockb* ./ 
+# Copy dependency files
+COPY package*.json ./
 
-# Install dependencies (you can switch between npm/yarn/bun)
+# Install dependencies
 RUN npm ci
 
-# Copy the rest of the project
+# Copy project files
 COPY . .
 
-# Build the project for production
+# Build Vite React app
 RUN npm run build
 
-# Debug step: List the contents of /app to see the build output folder
-RUN ls -l /app
-
-# ---------- Stage 2: Serve ----------
+# Stage 2: Serve with Nginx
 FROM nginx:stable-alpine
 
-# Remove default nginx static assets and copy your built app
+# Remove default nginx html
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy built files from builder stage
-# Change the directory name here based on the output folder name: `build` or `dist`
+# Copy build output
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Copy optional custom nginx config (optional)
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy custom nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80
 EXPOSE 80
 
-# Start nginx
 CMD ["nginx", "-g", "daemon off;"]
