@@ -5,23 +5,9 @@ import { CalendarDays, MapPin } from "lucide-react";
 export const Experience = () => {
   const experiences = [
     {
-      company: "Epam Systems",
-      role: "Software Engineer",
-      period: "Nov 2024 - Present",
-      location: "Pune",
-      description: [
-        "Developed a modular Angular micro frontend application used across products",
-        "Maintained a shared Angular library to enable code reuse and consistency",
-        "Contributed to .NET Core API development with YARP reverse proxy integration",
-        "Created custom service aggregators to expose unified endpoints",
-        "Worked closely with cross-functional teams in agile sprints"
-      ],
-      technologies: ["Angular", "Micro Frontends", ".NET Core", "TypeScript"]
-    },
-    {
       company: "Nitor Infotech",
-      role: "Lead Software Engineer", 
-      period: "Aug 2021 - Nov 2024",
+      role: "Senior Software Engineer", 
+      period: "Nov 2024 - Present",
       location: "Pune",
       description: [
         "Delivered multiple full-stack projects using Angular, .NET Core, and SQL Server",
@@ -33,18 +19,17 @@ export const Experience = () => {
       technologies: ["Angular", ".NET Core", "SQL Server"]
     },
     {
-      company: "smartData Enterprises (I) Ltd.",
+      company: "Krios Info Solution PVT Ltd.",
       role: "Associate Level 3",
-      period: "Feb 2019 - Aug 2021", 
-      location: "Nagpur",
+      period: "Jan 2018 - Sep 2021", 
+      location: "Pune",
       description: [
-        "Developed full-stack features for healthcare and service-based apps",
-        "Created a custom PDF form builder and appointment calendar module",
+        "Developed full-stack features for automobiles and service-based apps",
         "Interfaced with clients to gather requirements and clarify expectations",
         "Participated in sprint planning and contributed to task estimations",
         "Acted as the communication bridge between clients and the dev team"
       ],
-      technologies: ["Full Stack Development", "Healthcare Apps", "PDF Generation", "Client Management"]
+      technologies: ["Full Stack Development", "Automobiles Apps", "PDF Generation", "Client Management"]
     }
   ];
 

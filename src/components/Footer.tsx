@@ -20,7 +20,7 @@ export const Footer = () => {
           {/* Social Links */}
           <div className="flex items-center space-x-6">
             <a 
-              href="https://github.com/devendramilmile121"  //need to replace 
+              href="https://github.com/bhushanahire94"  //need to replace 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-110"
@@ -29,7 +29,7 @@ export const Footer = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com/in/devendramilmile" 
+              href="https://in.linkedin.com/in/bhushan-ahire-0782b410b" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-110"

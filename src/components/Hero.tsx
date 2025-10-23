@@ -69,7 +69,7 @@ export const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com/in/devendramilmile" //replace with mine
+              href="https://in.linkedin.com/in/bhushan-ahire-0782b410b" //replace with mine
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 transform hover:scale-110"

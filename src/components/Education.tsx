@@ -23,15 +23,10 @@ export const Education = () => {
     {
       title: "Microsoft Certified: Azure Fundamentals",
       provider: "Microsoft",
-      date: "Sep 2025",
-      link: "https://learn.microsoft.com/api/credentials/share/en-us/DevendraMilmile-1837/DE1F9B5D1243CB4E?sharingId=49B75DA84853852C"
+      date: "",
+      link: "#"
     },
-    {
-      title: "Angular Architecture. How to Build Scalable Web Applications",
-      provider: "Udemy",
-      date: "Nov 2022",
-      link: "https://www.udemy.com/certificate/UC-92e3e67f-5416-4f70-8ca2-4e0c654394b7/"
-    },
+  
   ];
 
   const sortedCertifications = [...certifications].sort((a, b) => {

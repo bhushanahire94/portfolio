@@ -6,19 +6,6 @@ import { ExternalLink, Github, Calendar } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "CLARIO - Public API Platform",
-      period: "Dec 2024 - Present",
-      description: "Developed a Public API using .NET 8 with YARP reverse proxy, enabling efficient routing and service composition. Built notification rule engine and Expression Designer Library for dynamic trigger creation.",
-      highlights: [
-        "Custom Swagger UI for improved API documentation",
-        "Notification rule engine with micro frontend architecture",
-        "Expression Designer Library with visual editor",
-        "YARP reverse proxy implementation"
-      ],
-      technologies: [".NET 8", "YARP", "Micro Frontend", "Swagger", "API Design"],
-      type: "Enterprise Platform"
-    },
-    {
       title: "UNIDO DIPS",
       period: "Sep 2021 - Nov 2024",
       description: "Full-stack web application with comprehensive features including multi-language support, external surveys, and JWT authentication. Led a team of 3 developers and 1 QA.",
@@ -30,7 +17,8 @@ export const Projects = () => {
       ],
       technologies: ["Angular", ".NET Core", "Survey.js", "JWT", "Multi-language"],
       type: "Enterprise Application"
-    },
+    }
+    ,
     {
       title: "SymphonyAI Platform",
       period: "Jan 2022 - Oct 2024",
@@ -43,24 +31,8 @@ export const Projects = () => {
       ],
       technologies: ["Angular", "Angular Gridster2", "AmCharts5", "TypeScript", "Library Development"],
       type: "Product Platform"
-    },
-    {
-      title: "ngx-custom-carousel",
-      period: "Apr 2024 - Present",
-      description: "Open source Angular carousel component with custom template rendering. Features semantic versioning and automated CI/CD pipeline.",
-      highlights: [
-        "Published to NPM repository",
-        "Semantic versioning implementation",
-        "CI/CD with GitHub Actions",
-        "Custom Angular template rendering"
-      ],
-      technologies: ["Angular",, "GitHub Actions", "TypeScript", "Open Source"],
-      type: "Open Source",
-      links: {
-        npm: "https://www.npmjs.com/package/ngx-custom-carousel",
-        github: "https://github.com/devendramilmile/ngx-custom-carousel"
-      }
     }
+    
   ];
 
   return (
@@ -149,36 +121,7 @@ export const Projects = () => {
                   </div>
                 </div>
                 
-                {project.links && (
-                  <div className="flex gap-3">
-                    {project.links.github && (
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        className="border-primary/30 hover:border-primary hover:bg-primary/10"
-                        asChild
-                      >
-                        <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4 mr-2" />
-                          GitHub
-                        </a>
-                      </Button>
-                    )}
-                    {project.links.npm && (
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        className="border-primary/30 hover:border-primary hover:bg-primary/10"
-                        asChild
-                      >
-                        <a href={project.links.npm} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          NPM
-                        </a>
-                      </Button>
-                    )}
-                  </div>
-                )}
+                
               </CardContent>
             </Card>
           ))}
