@@ -13,7 +13,7 @@ export const Projects = () => {
         "Multi-language support implementation",
         "Survey.js integration for external surveys",
         "JWT authentication in web APIs",
-        "Team leadership and project delivery"
+        "Unit testing and project delivery"
       ],
       technologies: ["Angular", ".NET Core", "Survey.js", "JWT", "Multi-language"],
       type: "Enterprise Application"
@@ -22,14 +22,14 @@ export const Projects = () => {
     {
       title: "SymphonyAI Platform",
       period: "Jan 2022 - Oct 2024",
-      description: "Angular library project for reusable components and navigation system across SymphonyAI products. Built drag-and-drop dashboard with configurable charts.",
+      description: "Revedia digital is the business intelligence platform that can help to calculate projection revenue based on trends and historical data.",
       highlights: [
         "25% increase in customer engagement",
-        "Drag-and-drop dashboard using Angular Gridster2",
-        "Configurable charts with AmCharts5",
-        "Dynamic menu system with JSON configuration"
+        "Development of Web API in .Net Core",
+        "Database design and writing stored procedure",
+        "Writing Xunit Test cases asper functionality."
       ],
-      technologies: ["Angular", "Angular Gridster2", "AmCharts5", "TypeScript", "Library Development"],
+      technologies: ["Angular JS", , "SQL Server", ".NET Core", "Xunit"],
       type: "Product Platform"
     }
     

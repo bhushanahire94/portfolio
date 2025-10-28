@@ -34,13 +34,7 @@ export const Contact = () => {
       icon: Linkedin,
       label: "LinkedIn",
       username: "bhushanahire",
-      url: "" //Replace with mine
-    },
-    {
-      icon: ExternalLink,
-      label: "-",
-      username: "-",
-      url: ""
+      url: "https://www.linkedin.com/in/bhushan-ahire-0782b410b/"
     }
   ];
 
