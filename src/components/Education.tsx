@@ -7,14 +7,14 @@ export const Education = () => {
   const education = [
     {
       degree: "Master of Computer Application",
-      institution: "Shri Ramdeo Baba College of Engineering and Management",
-      period: "Jun 2016 - Jun 2019",
+      institution: "Sinhagad Institute of Business Administration & Research",
+      period: "Jun 2014 - Jun 2016",
       type: "Masters Degree"
     },
     {
       degree: "Bachelor of Computer Application", 
       institution: "College of Management and Computer Science",
-      period: "Jun 2012 - Jun 2016",
+      period: "Jun 2012 - Jun 2014",
       type: "Bachelors Degree"
     }
   ];
