@@ -7,5 +7,5 @@ export default defineConfig({
   resolve: {
     alias: { '@': path.resolve(__dirname, './src') },
   },
-  base: '/portfolio/',  // 👈 important
+  base: './',  // 👈 important
 })
