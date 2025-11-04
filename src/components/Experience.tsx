@@ -7,7 +7,7 @@ export const Experience = () => {
     {
       company: "Nitor Infotech",
       role: "Senior Software Engineer", 
-      period: "Nov 2024 - Present",
+      period: "Oct 2021 - Present",
       location: "Pune",
       description: [
         "Delivered multiple full-stack projects using Angular, .NET Core, and SQL Server",

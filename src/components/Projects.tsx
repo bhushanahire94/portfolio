@@ -6,20 +6,6 @@ import { ExternalLink, Github, Calendar } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "UNIDO DIPS",
-      period: "Sep 2021 - Nov 2024",
-      description: "Full-stack web application with comprehensive features including multi-language support, external surveys, and JWT authentication. Led a team of 3 developers and 1 QA.",
-      highlights: [
-        "Multi-language support implementation",
-        "Survey.js integration for external surveys",
-        "JWT authentication in web APIs",
-        "Unit testing and project delivery"
-      ],
-      technologies: ["Angular", ".NET Core", "Survey.js", "JWT", "Multi-language"],
-      type: "Enterprise Application"
-    }
-    ,
-    {
       title: "SymphonyAI Platform",
       period: "Jan 2022 - Oct 2024",
       description: "Revedia digital is the business intelligence platform that can help to calculate projection revenue based on trends and historical data.",
@@ -31,8 +17,20 @@ export const Projects = () => {
       ],
       technologies: ["Angular JS", , "SQL Server", ".NET Core", "Xunit"],
       type: "Product Platform"
+    },
+    {
+      title: "UNIDO DIPS",
+      period: "Sep 2021 - Aug 2022",
+      description: "Full-stack web application with comprehensive features including multi-language support, external surveys, and JWT authentication. Led a team of 3 developers and 1 QA.",
+      highlights: [
+        "Multi-language support implementation",
+        "Survey.js integration for external surveys",
+        "JWT authentication in web APIs",
+        "Unit testing and project delivery"
+      ],
+      technologies: ["Angular", ".NET Core", "Survey.js", "JWT", "Multi-language"],
+      type: "Enterprise Application"
     }
-    
   ];
 
   return (
